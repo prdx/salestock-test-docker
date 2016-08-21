@@ -1,0 +1,3 @@
+[submodule "salestock-test"]
+	path = salestock-test
+	url = https://github.com/prdx/salestock-test.git
