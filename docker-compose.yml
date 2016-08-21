@@ -1,0 +1,13 @@
+db:
+  image: postgres
+  ports: 
+    - "5432:5432"
+web:
+  build: .
+  #environment:
+    #- DATABASE_URL=postgres://plummy-dev.cloudapp.net:5432
+  ports: 
+    - "80:80"
+  links: 
+    - db
+  
