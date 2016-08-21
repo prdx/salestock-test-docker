@@ -1,12 +1,14 @@
 # salestock-test-docker
 
-1. Requirements
+This docker has a submodule for the salestock-test
+
+## Requirements
 - Docker
 - Docker Compose
 
-2. Build
+## Build
 - docker-compose build
 - docker-compose up
 
-3. Run test in docker
+## Run test in docker
 
