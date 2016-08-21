@@ -1,4 +1,4 @@
-FROM phusion/passenger-ruby23:0.9.19
+FROM phusion/passenger-customizable:latest
 
 MAINTAINER Bagus Trihatmaja bagus.trihatmaja@gmail.com
 
@@ -19,8 +19,8 @@ EXPOSE 80
 # for features. Uncomment the features you want:
 #
 #   Build system and git.
-RUN /build/utilities.sh
-RUN /build/ruby2.3.sh
+RUN /pd_build/utilities.sh
+RUN /pd_build/ruby2.3.*.sh
 RUN apt-get install libpq-dev
 RUN rm -f /etc/service/nginx/down
 RUN rm /etc/nginx/sites-enabled/default
