@@ -4,8 +4,10 @@ db:
     - "5432:5432"
 web:
   build: .
-  #environment:
-    #- DATABASE_URL=postgres://plummy-dev.cloudapp.net:5432
+  volumes:
+    - ./salestock-test:/home/app/salestock-test
+  environment:
+    - SECRET_KEY_BASE=mynotsosecretkey
   ports: 
     - "80:80"
   links: 

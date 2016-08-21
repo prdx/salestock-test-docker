@@ -20,7 +20,7 @@ EXPOSE 80
 #
 #   Build system and git.
 RUN /pd_build/utilities.sh
-RUN /pd_build/ruby2.3.*.sh
+RUN /pd_build/ruby-2.3.1.sh
 RUN apt-get install libpq-dev
 RUN rm -f /etc/service/nginx/down
 RUN rm /etc/nginx/sites-enabled/default
